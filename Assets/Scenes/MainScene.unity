@@ -544,6 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566747154}
   - component: {fileID: 566747153}
+  - component: {fileID: 566747155}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -581,6 +582,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &566747155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566747152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89efa9a36339f5842bb4dfa8be57ed56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BelajarDelegate
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1171,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1422101671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422101673}
+  - component: {fileID: 1422101672}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1422101672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422101671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3222feba45e600749a452a1e379ad988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PemancarEvent
+--- !u!4 &1422101673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422101671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.55797, y: -0.57589, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440960929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1441,7 @@ Transform:
   m_GameObject: {fileID: 1535744273}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.22702, y: 1.33586, z: 0}
+  m_LocalPosition: {x: 8.04, y: 3.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1404,6 +1461,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   hp: 100
   ms: 2
+  jarakDeteksi: 6
+  jarakSerang: 1.5
 --- !u!1 &1652276377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,6 +1606,7 @@ GameObject:
   - component: {fileID: 1705326155}
   - component: {fileID: 1705326156}
   - component: {fileID: 1705326157}
+  - component: {fileID: 1705326158}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1653,7 +1713,7 @@ Transform:
   m_GameObject: {fileID: 1705326151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.76, y: -0.11, z: 0}
+  m_LocalPosition: {x: -5.25, y: 2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1746,6 +1806,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1705326158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705326151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c1cdb7a2c73af4380a75684824ec15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PenerimaEvent
 --- !u!1 &1735712589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,6 +2066,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   hp: 100
   ms: 2
+  jarakDeteksi: 6
+  jarakSerang: 1.5
 --- !u!1 &2022625423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,3 +2493,4 @@ SceneRoots:
   - {fileID: 2019593466}
   - {fileID: 1408330089}
   - {fileID: 1535744275}
+  - {fileID: 1422101673}
